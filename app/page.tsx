@@ -164,14 +164,31 @@ export default function HomePage() {
         title="Prioridades para cerrar TRL 3"
         description="Las actividades (A1–A6) corresponden a nuestro cronograma interno de hitos técnicos para la fase actual. Concentran el trabajo operativo a corto plazo para pasar del V1 histórico a una versión reproducible."
       >
-        <div className="mb-8 overflow-hidden rounded-[2rem] border border-white/10 glass">
-          <Image
-            src="/media/cronograma-placeholder.png"
-            alt="Cronograma de trabajo"
-            width={1200}
-            height={600}
-            className="w-full object-cover opacity-80"
-          />
+        <div className="mb-8 grid gap-5 md:grid-cols-2">
+          <div className="group overflow-hidden rounded-[2rem] border border-white/10 glass relative">
+            <div className="absolute left-4 top-4 z-10 rounded-xl bg-black/50 px-3 py-1 text-xs text-white backdrop-blur-md">
+              Cronograma operativo
+            </div>
+            <Image
+              src="/media/cronograma-placeholder.png"
+              alt="Cronograma de trabajo"
+              width={600}
+              height={400}
+              className="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+            />
+          </div>
+          <div className="group overflow-hidden rounded-[2rem] border border-white/10 glass relative">
+            <div className="absolute left-4 top-4 z-10 rounded-xl bg-black/50 px-3 py-1 text-xs text-white backdrop-blur-md">
+              Seguimiento ágil (Trello)
+            </div>
+            <Image
+              src="/media/trello-tablero.png"
+              alt="Tablero de gestión en Trello"
+              width={600}
+              height={400}
+              className="h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+            />
+          </div>
         </div>
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {activities.map((item) => (
