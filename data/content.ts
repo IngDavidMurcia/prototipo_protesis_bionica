@@ -70,56 +70,87 @@ export const activities = [
 export const evidenceGallery = [
   {
     file: "/media/v1-prototipo-01.jpeg",
-    title: "Prototipo mecánico V1",
-    description: "Registro del prototipo mecánico histórico empleado como antecedente técnico."
+    title: "Prototipo mecánico V1 - Vista 1",
+    description: "Registro del prototipo mecánico histórico empleado como antecedente técnico. Vista general de su estructura."
   },
   {
     file: "/media/v1-prototipo-02.jpeg",
-    title: "Detalle de ensamblaje",
-    description: "Vista detallada de piezas impresas y rutas mecánicas del V1."
+    title: "Prototipo mecánico V1 - Vista 2",
+    description: "Vista adicional del prototipo V1, destacando las proporciones y la integración del mecanismo pasivo."
   },
   {
-    file: "/media/cad-dedo-v1.png",
-    title: "Modelado CAD de componentes",
-    description: "Capturas de diseño paramétrico y exploración geométrica en la fase de modelado."
+    file: "/media/detalle-ensamble-01.jpeg",
+    title: "Detalle de ensamblaje",
+    description: "Vista detallada de piezas impresas, uniones articulares y rutas de los tendones en el diseño V1."
+  },
+  {
+    file: "/media/cad-modelos-01.png",
+    title: "Modelado CAD - Fase inicial",
+    description: "Capturas de diseño paramétrico y exploración geométrica inicial de los componentes mecánicos."
+  },
+  {
+    file: "/media/cad-modelos-02.png",
+    title: "Modelado CAD - Ensamblaje",
+    description: "Validación digital de tolerancias y acoplamientos antes de iniciar la manufactura aditiva."
   },
   {
     file: "/media/equipo-aprendices-01.jpeg",
-    title: "Trabajo del equipo",
-    description: "Participación de aprendices en actividades de observación, análisis y prototipado."
+    title: "Trabajo del equipo - Sesión 1",
+    description: "Participación de los aprendices en actividades de observación, medición y análisis de requerimientos."
+  },
+  {
+    file: "/media/equipo-aprendices-02.jpeg",
+    title: "Trabajo del equipo - Sesión 2",
+    description: "Integración de componentes, pruebas empíricas y revisión de los resultados obtenidos en laboratorio."
   },
   {
     file: "/media/fabricacion-controlada-01.jpeg",
     title: "Nueva fabricación controlada",
-    description: "Inicio de la línea de evidencia reproducible mediante fabricación documentada."
+    description: "Inicio de la línea de evidencia reproducible mediante fabricación documentada bajo parámetros estandarizados."
   },
   {
     file: "/media/exploracion-servos-01.jpeg",
-    title: "Exploraciones previas",
-    description: "Evidencia de pruebas exploratorias con servomotores, sin constituir aún el V2 formal."
+    title: "Exploraciones V2",
+    description: "Evidencia de pruebas preliminares con servomotores y actuación electromecánica para la siguiente fase tecnológica."
   }
 ];
 
 export const selectedMediaGuide = [
+  {
+    targetName: "hero-estado-visible.jpeg",
+    sourceSuggestion: "Imagen representativa principal para la sección superior (Inicio)."
+  },
   {
     targetName: "v1-prototipo-01.jpeg",
     sourceSuggestion: "10_EVIDENCIAS\\Historico\\V1_Historico\\Prototipo_Mecanico\\WhatsApp Image 2026-05-09 at 9.43.35 PM.jpeg"
   },
   {
     targetName: "v1-prototipo-02.jpeg",
-    sourceSuggestion: "10_EVIDENCIAS\\Historico\\V1_Historico\\Prototipo_Mecanico\\WhatsApp Image 2026-05-11 at 5.20.00 PM.jpeg"
+    sourceSuggestion: "Otra vista del prototipo (ej. 10_EVIDENCIAS\\Historico\\V1_Historico\\Prototipo_Mecanico\\WhatsApp Image 2026-05-11 at 5.20.00 PM.jpeg)"
+  },
+  {
+    targetName: "detalle-ensamble-01.jpeg",
+    sourceSuggestion: "Foto en acercamiento de uniones y piezas internas impresas en 3D."
+  },
+  {
+    targetName: "cad-modelos-01.png",
+    sourceSuggestion: "90_ARCHIVO_HISTORICO\\Recursos_Graficos_Anteriores o 03_DISENO\\...\\Dedo_V1 v6.png"
+  },
+  {
+    targetName: "cad-modelos-02.png",
+    sourceSuggestion: "Captura del ensamblaje o estructura digital completa en software CAD."
+  },
+  {
+    targetName: "equipo-aprendices-01.jpeg",
+    sourceSuggestion: "10_EVIDENCIAS\\Historico\\Formacion_2026\\20260511_150111.jpg"
+  },
+  {
+    targetName: "equipo-aprendices-02.jpeg",
+    sourceSuggestion: "Segunda fotografía del equipo interactuando con los dispositivos o documentando."
   },
   {
     targetName: "fabricacion-controlada-01.jpeg",
     sourceSuggestion: "Usar una fotografía nueva de la reproducción controlada V1 cuando esté disponible."
-  },
-  {
-    targetName: "cad-dedo-v1.png",
-    sourceSuggestion: "90_ARCHIVO_HISTORICO\\Recursos_Graficos_Anteriores o 03_DISENO\\...\\Dedo_V1 v6.png"
-  },
-  {
-    targetName: "equipo-aprendices-01.jpg",
-    sourceSuggestion: "10_EVIDENCIAS\\Historico\\Formacion_2026\\20260511_150111.jpg"
   },
   {
     targetName: "exploracion-servos-01.jpeg",

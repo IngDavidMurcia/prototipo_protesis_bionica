@@ -72,34 +72,32 @@ export default function HomePage() {
           </div>
 
           <div className="animate-fadeUp rounded-[2rem]">
-            <div className="glass glow-border scanline relative overflow-hidden rounded-[2rem] p-4">
+            <div className="glass glow-border scanline relative overflow-hidden rounded-[2rem] p-4 flex flex-col gap-4">
               <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-cyan-300/10 blur-3xl" />
               <div className="absolute -left-8 bottom-0 h-32 w-32 rounded-full bg-violet-400/10 blur-3xl" />
-              <div className="relative overflow-hidden rounded-[1.5rem]">
+              <div className="relative overflow-hidden rounded-[1.5rem] shrink-0">
                 <Image
-                  src="/media/v1-prototipo-01.jpeg"
-                  alt="Prototipo V1"
+                  src="/media/hero-estado-visible.jpeg"
+                  alt="Prototipo V1 - Estado visible"
                   width={900}
                   height={900}
-                  className="h-[380px] w-full object-cover"
+                  className="h-[280px] w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-slate-950/90 via-slate-950/10 to-cyan-400/10" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-slate-950/40 via-transparent to-cyan-400/10" />
                 <div className="absolute left-5 right-5 top-5 flex justify-between gap-3">
                   <div className="glass rounded-2xl px-4 py-3 text-xs text-slate-200">V1 · mecánico pasivo</div>
                   <div className="glass rounded-2xl px-4 py-3 text-xs text-slate-200">Seguimiento TRL 2 → 3</div>
                 </div>
-                <div className="absolute bottom-5 left-5 right-5">
-                  <div className="glass rounded-3xl p-4">
-                    <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/80">Estado visible</p>
-                    <h3 className="mt-2 text-lg font-semibold text-white">
-                      Evidencia física, reorganización documental y nueva fabricación controlada
-                    </h3>
-                    <p className="mt-2 text-sm leading-6 text-slate-300">
-                      El prototipo histórico se conserva como antecedente técnico. La evidencia reproducible
-                      comienza con la nueva campaña de fabricación y verificación.
-                    </p>
-                  </div>
-                </div>
+              </div>
+              <div className="relative z-10 glass rounded-3xl p-5">
+                <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/80">Estado visible</p>
+                <h3 className="mt-2 text-lg font-semibold text-white">
+                  Evidencia física, reorganización documental y nueva fabricación controlada
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  El prototipo histórico se conserva como antecedente técnico. La evidencia reproducible
+                  comienza con la nueva campaña de fabricación y verificación.
+                </p>
               </div>
             </div>
           </div>
@@ -270,7 +268,7 @@ export default function HomePage() {
         id="documentos"
         kicker="Documentos"
         title="Activos y documentación"
-        description="Los archivos y documentos del proyecto se actualizan constantemente y se irán habilitando a medida que se van construyendo (no todo está terminado)."
+        description="Los archivos y documentos del proyecto se actualizan constantemente y se irán habilitando a medida que se van construyendo, vaya a datos de contacto para ampliar información sobre documentación y artefactos."
       >
         <div className="mx-auto max-w-3xl">
           <div className="glass rounded-3xl p-6">
@@ -293,7 +291,7 @@ export default function HomePage() {
                 <summary className="inline-flex cursor-pointer rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10 list-none">
                   Contacto del proyecto
                 </summary>
-                <div className="absolute left-0 top-full z-50 mt-2 w-64 rounded-2xl border border-white/10 bg-[#0c1622] p-5 shadow-xl animate-fadeUp">
+                <div className="absolute left-0 bottom-full z-[100] mb-2 w-64 rounded-2xl border border-white/10 bg-[#0c1622] p-5 shadow-2xl animate-fadeUp">
                   <h4 className="mb-2 text-sm font-semibold text-cyan-200">Datos de Contacto</h4>
                   <p className="text-sm text-slate-300">Responsable: Ing. David Murcia</p>
                   <p className="text-sm text-slate-300">Correo: davidmurcia001@gmail.com</p>
