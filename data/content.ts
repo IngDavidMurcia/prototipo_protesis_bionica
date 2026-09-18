@@ -21,10 +21,10 @@ export const project = {
     "Inventario/BOM y arquitectura V2"
   ],
   highlights: [
-    { label: "Archivos técnicos reorganizados", value: "249", note: "Migración trazable completada" },
-    { label: "Estructura documental activa", value: "A0–A17", note: "Ruta de trabajo organizada" },
-    { label: "Estado actual", value: "V1", note: "Mecánico pasivo" },
-    { label: "Trayectoria objetivo", value: "TRL 2 → 5", note: "Desarrollo progresivo" }
+    { label: "Archivos técnicos construidos", value: "249", note: "Migrando a trazabilidad completa" },
+    { label: "Actividades de proyecto en desarrollo", value: "A0–A17", note: "Ruta de trabajo definida" },
+    { label: "Estado actual (1 de 3 planificadas)", value: "V1", note: "Mecánico pasivo" },
+    { label: "Trayectoria objetivo", value: "TRL 2 → 5", note: "Desarrollo progresivo y cíclico (evaluación y rediseño)" }
   ]
 };
 
@@ -84,7 +84,7 @@ export const evidenceGallery = [
     description: "Capturas de diseño paramétrico y exploración geométrica en la fase de modelado."
   },
   {
-    file: "/media/equipo-aprendices-01.jpg",
+    file: "/media/equipo-aprendices-01.jpeg",
     title: "Trabajo del equipo",
     description: "Participación de aprendices en actividades de observación, análisis y prototipado."
   },

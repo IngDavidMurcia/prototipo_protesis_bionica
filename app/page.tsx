@@ -120,9 +120,9 @@ export default function HomePage() {
 
         <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="glass glow-border rounded-3xl p-6">
-            <p className="section-kicker">Declaración técnica</p>
+            <p className="section-kicker">Declaración técnica (Fase actual: V1 - TRL 2)</p>
             <h3 className="mt-3 text-2xl font-semibold text-white">Nota sobre propiedad intelectual y origen formativo del V1</h3>
-            <p className="mt-4 text-sm leading-7 text-slate-300 md:text-base">
+            <p className="mt-4 text-sm leading-7 text-slate-300 md:text-base text-justify">
               {project.summaryNote}
             </p>
           </div>
@@ -156,7 +156,7 @@ export default function HomePage() {
       <Section
         kicker="Trazabilidad"
         title="Trayectoria del proyecto"
-        description="La formalización actual no borra el pasado: lo reubica. Se reconocen antecedentes formativos, inicio técnico, consolidación documental y el siguiente hito de validación."
+        description="Se inició de modo exploratorio sin alcances definidos, mediante pruebas de concepto muy básicas con índole de aprendizaje y transferencia de conocimiento a aprendices. Luego se formalizó la documentación, el inicio formal y los protocolos para generar trazabilidad en cada intento de impresión, prueba y modelo."
       >
         <Timeline />
       </Section>
@@ -164,8 +164,17 @@ export default function HomePage() {
       <Section
         kicker="Plan inmediato"
         title="Prioridades para cerrar TRL 3"
-        description="Las actividades A1–A6 concentran el trabajo operativo del corto plazo y sirven como puente entre el V1 histórico y la próxima configuración reproducible."
+        description="Las actividades (A1–A6) corresponden a nuestro cronograma interno de hitos técnicos para la fase actual. Concentran el trabajo operativo a corto plazo para pasar del V1 histórico a una versión reproducible."
       >
+        <div className="mb-8 overflow-hidden rounded-[2rem] border border-white/10 glass">
+          <Image
+            src="/media/cronograma-placeholder.png"
+            alt="Cronograma de trabajo"
+            width={1200}
+            height={600}
+            className="w-full object-cover opacity-80"
+          />
+        </div>
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {activities.map((item) => (
             <div key={item.code} className="glass rounded-3xl p-5">
@@ -201,7 +210,7 @@ export default function HomePage() {
         id="metodologia"
         kicker="Metodología"
         title="Cómo trabaja el proyecto"
-        description="El sistema documental y experimental se diseñó para minimizar fricción sin perder rigor: una sola ruta de trazabilidad, evidencia mínima suficiente y ensayos orientados a decisión."
+        description="Gestionamos el proyecto mediante tableros como Trello para aplicar metodologías ágiles y Kanban en el seguimiento de tareas. El ciclo iterativo minimiza fricción sin perder rigor:"
       >
         <div className="grid gap-6 lg:grid-cols-4">
           {[
@@ -231,24 +240,25 @@ export default function HomePage() {
             <ul className="space-y-4 text-sm leading-7 text-slate-300">
               <li>• Integra laboratorios de diseño y prototipado 3D, electrónica, robótica, TIC e inteligencia artificial.</li>
               <li>• Reduce pérdida de conocimiento causada por rotación de aprendices mediante trazabilidad y nueva arquitectura documental.</li>
-              <li>• Facilita reportes rápidos para la dependencia de investigación y soporta divulgación institucional con evidencia visual.</li>
+              <li>• Impacto social a futuro: reducción de brechas de oportunidad en salud, tecnología e innovación, incorporando nuevas tecnologías en contextos reales.</li>
+              <li>• Participación en ferias y eventos de divulgación (ej. REDCOLSI, vigencia 2026, modalidad póster).</li>
               <li>• Crea una base más sólida para futuras versiones V2 y V3, evitando sobredimensionar resultados actuales.</li>
             </ul>
           </div>
           <div className="glass rounded-3xl p-6">
             <p className="section-kicker">Comunicación responsable</p>
-            <h3 className="mt-3 text-2xl font-semibold text-white">Qué sí y qué no se debe comunicar</h3>
+            <h3 className="mt-3 text-2xl font-semibold text-white">Transparencia del proyecto</h3>
             <div className="mt-5 space-y-4">
               <div className="rounded-2xl border border-emerald-300/20 bg-emerald-300/10 p-4">
-                <p className="text-sm font-medium text-emerald-200">Sí comunicar</p>
+                <p className="text-sm font-medium text-emerald-200">El proyecto actualmente SÍ tiene:</p>
                 <p className="mt-2 text-sm leading-6 text-slate-200">
                   TRL 2 consolidado, reproducción controlada del V1, cierre de evidencias TRL 3, formación de aprendices y ruta V1–V3.
                 </p>
               </div>
               <div className="rounded-2xl border border-rose-300/20 bg-rose-300/10 p-4">
-                <p className="text-sm font-medium text-rose-200">No comunicar como resultado logrado</p>
+                <p className="text-sm font-medium text-rose-200">El proyecto actualmente NO es:</p>
                 <p className="mt-2 text-sm leading-6 text-slate-200">
-                  Prótesis clínica funcional, control EMG operativo, IA integrada, validación con usuarios o resultados de impacto en salud.
+                  Una prótesis clínica funcional, no tiene control EMG operativo, ni IA integrada, ni validación médica con usuarios o impacto directo en salud.
                 </p>
               </div>
             </div>
@@ -258,18 +268,18 @@ export default function HomePage() {
 
       <Section
         id="documentos"
-        kicker="Documentos y despliegue"
-        title="Activos listos para compartir"
-        description="Este micrositio puede acompañarse con un resumen ejecutivo breve, una carpeta curada de evidencias y capturas del tablero si una auditoría requiere mostrar la gestión operativa."
+        kicker="Documentos"
+        title="Activos y documentación"
+        description="Los archivos y documentos del proyecto se actualizan constantemente y se irán habilitando a medida que se van construyendo (no todo está terminado)."
       >
-        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="mx-auto max-w-3xl">
           <div className="glass rounded-3xl p-6">
             <h3 className="text-xl font-semibold text-white">Documentos sugeridos</h3>
             <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-300">
               <li>• Resumen ejecutivo actualizado (2 páginas).</li>
               <li>• Documento maestro del proyecto.</li>
               <li>• Protocolo general de trazabilidad, fabricación y evidencia.</li>
-              <li>• Captura seleccionada del tablero, solo si se requiere soporte de gestión.</li>
+              <li>• Captura seleccionada del tablero de gestión operativa.</li>
             </ul>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -279,28 +289,17 @@ export default function HomePage() {
               >
                 Descargar resumen
               </a>
-              <a
-                href="mailto:davidmurcia001@gmail.com"
-                className="rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
-              >
-                Contacto del proyecto
-              </a>
-            </div>
-          </div>
-
-          <div className="glass rounded-3xl p-6">
-            <h3 className="text-xl font-semibold text-white">Imágenes a copiar al sitio</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-300">
-              Coloca los archivos seleccionados en <code className="rounded bg-white/10 px-2 py-1 text-cyan-200">public/media</code>
-              usando exactamente estos nombres para que la web los tome automáticamente.
-            </p>
-            <div className="mt-4 max-h-80 space-y-3 overflow-auto pr-2 text-sm">
-              {selectedMediaGuide.map((item) => (
-                <div key={item.targetName} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <div className="font-medium text-cyan-200">{item.targetName}</div>
-                  <div className="mt-2 text-slate-300">{item.sourceSuggestion}</div>
+              <details className="group relative">
+                <summary className="inline-flex cursor-pointer rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10 list-none">
+                  Contacto del proyecto
+                </summary>
+                <div className="absolute left-0 top-full z-50 mt-2 w-64 rounded-2xl border border-white/10 bg-[#0c1622] p-5 shadow-xl animate-fadeUp">
+                  <h4 className="mb-2 text-sm font-semibold text-cyan-200">Datos de Contacto</h4>
+                  <p className="text-sm text-slate-300">Responsable: Ing. David Murcia</p>
+                  <p className="text-sm text-slate-300">Correo: davidmurcia001@gmail.com</p>
+                  <p className="text-sm text-slate-300">Vigencia 2026</p>
                 </div>
-              ))}
+              </details>
             </div>
           </div>
         </div>
@@ -316,8 +315,8 @@ export default function HomePage() {
               </p>
             </div>
             <div className="text-xs leading-6 text-slate-400">
-              Última actualización sugerida: septiembre de 2026<br />
-              Ruta actual del proyecto: PROYECTOS_SEMILLERO/Protesis_bionicas
+              Última actualización: septiembre de 2026<br />
+              Dedicación estimada de desarrollo semanal: 3 horas
             </div>
           </div>
         </div>
