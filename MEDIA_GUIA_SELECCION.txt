@@ -1,0 +1,26 @@
+
+Copiar a public/media con estos nombres de destino:
+
+1) v1-prototipo-01.jpeg
+   Fuente sugerida:
+   10_EVIDENCIAS\Historico\V1_Historico\Prototipo_Mecanico\WhatsApp Image 2026-05-09 at 9.43.35 PM.jpeg
+
+2) v1-prototipo-02.jpeg
+   Fuente sugerida:
+   10_EVIDENCIAS\Historico\V1_Historico\Prototipo_Mecanico\WhatsApp Image 2026-05-11 at 5.20.00 PM.jpeg
+
+3) fabricacion-controlada-01.jpeg
+   Fuente sugerida:
+   incorporar una foto nueva de la reproducción controlada del V1.
+
+4) cad-dedo-v1.png
+   Fuente sugerida:
+   Dedo_V1 v6.png o una captura equivalente de CAD.
+
+5) equipo-aprendices-01.jpg
+   Fuente sugerida:
+   10_EVIDENCIAS\Historico\Formacion_2026\20260511_150111.jpg
+
+6) exploracion-servos-01.jpeg
+   Fuente sugerida:
+   10_EVIDENCIAS\Historico\Exploraciones_2026\Servomotores\WhatsApp Image 2026-05-09 at 9.39.58 PM.jpeg
