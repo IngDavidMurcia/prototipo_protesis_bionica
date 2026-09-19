@@ -21,7 +21,7 @@ export const project = {
     "Inventario/BOM y arquitectura V2"
   ],
   highlights: [
-    { label: "Archivos técnicos construidos", value: "249", note: "Migrando a trazabilidad completa" },
+    { label: "Archivos técnicos inventariados y reorganizados", value: "249", note: "Migrando a trazabilidad completa" },
     { label: "Actividades de proyecto en desarrollo", value: "A0–A17", note: "Ruta de trabajo definida" },
     { label: "Estado actual (1 de 3 planificadas)", value: "V1", note: "Mecánico pasivo" },
     { label: "Trayectoria objetivo", value: "TRL 2 → 5", note: "Desarrollo progresivo y cíclico (evaluación y rediseño)" }
@@ -71,7 +71,7 @@ export const evidenceGallery = [
   {
     file: "/media/v1-prototipo-01.jpeg",
     title: "Prototipo mecánico V1 - Vista 1",
-    description: "Registro del prototipo mecánico histórico empleado como antecedente técnico. Vista general de su estructura."
+    description: "Ensamble de los componentes mecánicos existentes con los cinco dedos instalados. La configuración de transmisión mediante tendones permanece incompleta y no corresponde a una prueba de concepto reproducible."
   },
   {
     file: "/media/v1-prototipo-02.jpeg",
@@ -91,12 +91,12 @@ export const evidenceGallery = [
   {
     file: "/media/cad-modelos-02.png",
     title: "Modelado CAD - Ensamblaje",
-    description: "Validación digital de tolerancias y acoplamientos antes de iniciar la manufactura aditiva."
+    description: "Exploración digital de geometrías, uniones y compatibilidad preliminar de componentes."
   },
   {
     file: "/media/equipo-aprendices-01.jpeg",
     title: "Trabajo del equipo - Sesión 1",
-    description: "Participación de los aprendices en actividades de observación, medición y análisis de requerimientos."
+    description: "Sesiones formativas de modelado, observación de componentes y trabajo técnico asociado al proyecto."
   },
   {
     file: "/media/equipo-aprendices-02.jpeg",
@@ -110,7 +110,7 @@ export const evidenceGallery = [
   },
   {
     file: "/media/exploracion-servos-01.jpeg",
-    title: "Exploraciones V2",
+    title: "Exploración electromecánica previa",
     description: "Evidencia de pruebas preliminares con servomotores y actuación electromecánica para la siguiente fase tecnológica."
   }
 ];
